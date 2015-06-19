@@ -175,13 +175,32 @@ namespace fyiReporting.RDL
       <Finish>Finish</Finish> 
       <Enable>true</Enable> 
    </Compression> 
-  <CustomReportItems> 
-    <CustomReportItem> 
-      <Type>BarCode</Type> 
-      <CodeModule>RdlCri.dll</CodeModule> 
-      <ClassName>fyiReporting.CRI.BarCode</ClassName> 
-    </CustomReportItem> 
-  </CustomReportItems> 
+  <CustomReportItem>
+         <Type>BarCode Bookland</Type>
+         <CodeModule>RdlCri.dll</CodeModule>
+         <ClassName>fyiReporting.CRI.BarCodeBookland</ClassName>
+      </CustomReportItem>
+      <CustomReportItem>
+         <Type>QRCode</Type>
+         <CodeModule>RdlCri.dll</CodeModule>
+         <ClassName>fyiReporting.CRI.QrCode</ClassName>
+      </CustomReportItem>
+      <CustomReportItem>
+         <Type>BarCode39</Type>
+         <CodeModule>RdlCri.dll</CodeModule>
+         <ClassName>fyiReporting.CRI.BarCode39</ClassName>
+      </CustomReportItem>
+      <CustomReportItem>
+         <Type>BarCode128</Type>
+         <CodeModule>RdlCri.dll</CodeModule>
+         <ClassName>fyiReporting.CRI.BarCode128</ClassName>
+      </CustomReportItem>
+      <CustomReportItem>
+         <Type>BarCodeEAN8</Type>
+         <CodeModule>RdlCri.dll</CodeModule>
+         <ClassName>fyiReporting.CRI.BarCodeEAN8</ClassName>
+      </CustomReportItem>
+   </CustomReportItems>
 </config>";
             }
             XmlNode xNode;
